@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-dore/icon-dore.png" />
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Import librairies JS + Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Feuille de style -->
+    <link rel="styleSheet" href="style.css" type="text/css" />
+    <link rel="styleSheet" href="normalize.css" type="text/css" />
+    <title>Le Velour</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a href="index.html" id="logo" class="active">
+          <img
+            src="images/logo-vert/logo-vert-inline-2.png"
+            alt="logo le velour"
+          />
+        </a>
+        <!-- Liens de navigation (cachés par défaut) -->
+        <div id="mesLiens" class="navbar">
+          <a href="index.html">Accueil</a>
+          <a href="nos-menus.html" class="active">Notre Carte</a>
+          <a href="reservation.html" class="send">Réservez une table</a>
+        </div>
+        <!-- Burger Menu -->
+        <div class="burgermenu">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <i class="fa-solid fa-xmark" id="xmark"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="reservation reservation-top">
+        <a href="reservation.html">Réservez une table</a>
+      </section>
+      <section class="info-velour">
+        <h2 class="metropolis">Menu velour</h2>
+        <p>Servi midi et soir</p>
+        <div class="price">
+          <p>Prix du menu : <span class="prix">59.00€</span></p>
+          <p>
+            Accord mets et vins :
+            <span class="prix">25.00€ supplémentaires</span>
+          </p>
+        </div>
+      </section>
+      <section class="menu-velour container">
+        <h3>Amuses-bouches</h3>
+        <div class="entrées">
+          <h3>Deux entrées</h3>
+          <p>Brouillade d'oeuf truffée et croque truffe</p>
+          <p>Poireau grillé, espuma poireau, mimolette</p>
+        </div>
+        <div class="poisson">
+          <h3>Un poisson</h3>
+          <p>Saumon, nouilles soba, oignon tempura</p>
+          <p>ou</p>
+          <p>Damier de St-Jacques condiment citron</p>
+        </div>
+        <div class="viande">
+          <h3>Une viande</h3>
+          <p>Poitrine de pigeonneau au foie gras</p>
+          <p>ou</p>
+          <p>Pièce d'agneau de lait des Pyrénées condiment datte</p>
+        </div>
+        <div class="fromage">
+          <h3>Un plateau de fromages</h3>
+          <p>6 fromages au choix</p>
+          <p>À choisir parmi une sélection de 40 fromages, comme :</p>
+          <p>
+            le Samson en Fleurs, le Bleu des Grottes, l'audace à la Truffe, le
+            Flocon, le Lingot de Chèvre cendré ou encore le Patou de Brebis
+          </p>
+        </div>
+        <div class="dessert">
+          <h3>Un dessert</h3>
+          <p>
+            Cannelloni de patate douce et fruits de la passion, chocolat blanc
+            et calamansi
+          </p>
+          <p>ou</p>
+          <p>
+            Planète aux agrumes : orange sanguine, citron et chocolat craquant
+          </p>
+          <p>ou</p>
+          <p>Crème brûlée à la fève de tonka et ses pommes caramélisées.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="reservation">
+        <a href="reservation.html">Réserver une table</a>
+      </div>
+      <img
+        class="logoFooter"
+        src="images/logo-vert/logo-vert-1-1.png"
+        alt="logo footer"
+      />
+      <p>
+        Lun : Fermé <br />
+        Mar - Dim : 12h - 13h30 / 19h - 21h
+      </p>
+      <p>
+        38 Place Graslin - 44000 Nantes
+      </p>
+      <p>
+        <a href="tel:+330241328703">02 41 32 87 03</a>
+        <br />
+        <a href="mailto:contact@levelour.com">contact@levelour.com</a>
+      </p>
+      <div class="reseaux">
+        <a href="">
+          <img
+            src="images/icon-reseaux/icon-facebook.png"
+            alt="icon facebook"
+          />
+        </a>
+        <a href="">
+          <img
+            src="images/icon-reseaux/icon-instagram.png"
+            alt="icon instagram"
+          />
+        </a>
+        <a href="">
+          <img
+            src="images/icon-reseaux/icon-tripadvisor.png"
+            alt="icon tripadvisor"
+          />
+        </a>
+        <a href="" class="telephone">
+          <img src="images/icon-reseaux/icon-tel.png" alt="icon telephone" />
+        </a>
+        <a href="">
+          <img src="images/icon-reseaux/icon-mail.png" alt="icon mail" />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

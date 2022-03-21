@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-dore/icon-dore.png" />
+    <!-- Import Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Import librairies JS + Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Feuille de style -->
+    <link rel="styleSheet" href="style.css" type="text/css" />
+    <link rel="styleSheet" href="normalize.css" type="text/css" />
+    <title>Le Velour</title>
+  </head>
+  <body>
+    <header>
+      <div class="topnav">
+        <a href="index.html" id="logo" class="active">
+          <img
+            src="images/logo-vert/logo-vert-inline-2.png"
+            alt="logo le velour"
+          />
+        </a>
+        <!-- Liens de navigation (cachés par défaut) -->
+        <div id="mesLiens" class="navbar">
+          <a href="index.html" class="active">Accueil</a>
+          <a href="nos-menus.html">Notre Carte</a>
+          <a href="reservation.html" class="send">Réservez une table</a>
+        </div>
+        <!-- Burger Menu -->
+        <div class="burgermenu">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars" id="bars"></i>
+            <i class="fa-solid fa-xmark" id="xmark"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="reservation reservation-top">
+        <a href="reservation.html">Réservez une table</a>
+      </section>
+      <section class="slider">
+        <div class="velour">
+          <h1>Le Velour</h1>
+          <h2>Restaurant Gastronomique <br />& Épicerie Fine</h2>
+        </div>
+        <ul class="bxslider">
+          <li>
+            <!-- style="background-image: url('images/photos/slider-1.jpg');"-->
+            <img src="images/photos/slider-1.jpg" alt="slider 1" />
+          </li>
+          <li>
+            <img src="images/photos/slider-2.jpg" alt="slider 2" />
+          </li>
+          <li>
+            <img src="images/photos/slider-3.jpg" alt="slider 3" />
+          </li>
+          <li>
+            <img src="images/photos/slider-4.jpg" alt="slider 4" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="container">
+        <p class="prez deco-carre">
+          Le Velour est le nouveau Restaurant gastronomique qui vous régale les
+          papilles...
+        </p>
+        <p>
+          Votre nouvel endroit chic et élégant, situé à deux pas de la place
+          Graslin !
+        </p>
+        <p>
+          Dégustez des plats cuisinés avec attention, qui reflètent la
+          personnalité et la passion de l'équipe.
+        </p>
+        <p class="deco-carre">
+          Le restaurant vous invite à partager des instants privilégiés, parmi
+          les 130 places assises que proposent nos salles intérieures
+        </p>
+        <div class="nosmenus">
+          <a href="nos-menus.html">nos menus</a>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="concept">
+          <h2 class="decoration deco-rond">Le Concept</h2>
+          <div class="texte-concept">
+            <p>
+              Véritable tendance du moment, le concept de l'épicerie-restaurant
+              est en plein essor, depuis quelques temps.
+            </p>
+            <p>
+              Il consiste à proposer une activité autour d'une épicerie ou d'une
+              boutique en plus de l'activité de restaurateur.
+            </p>
+            <div class="discover-epicerie">
+              <a href="#">Découvrir l'épicerie</a>
+            </div>
+          </div>
+          <figure>
+            <img
+              src="images/photos/plat-mobile.jpg"
+              alt="image plat gastronomique"
+              class="assiette"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="epicerie">
+        <div class="container">
+          <h2 class="epicerie deco-rond">
+            Le Velour... c'est aussi<br />
+            une <span>épicerie</span>
+          </h2>
+          <p>
+            Une fois le ventre plein, nous vous proposons un dernier arrêt...
+          </p>
+          <p>
+            Un espace chaleureux, mis à votre disposition, où vous pourrez vous
+            procurez vos produits du quotidien, comme :
+          </p>
+          <p>
+            Des viennoiseries, des confitures, du thé, du café, du vin, etc.
+          </p>
+          <p>
+            Nous vous garantissons des produits locaux, qui sont utilisés au
+            sein de notre carte !
+          </p>
+        </div>
+        <div class="croissants">
+          <img
+            srcset="
+              images/photos/croissants-mobile.jpg   780w,
+              images/photos/croissants-desktop.jpg 2000w
+            "
+            src="images/photos/croissants-mobile.jpg"
+            alt="image croissant petit déjeuner"
+          />
+        </div>
+      </section>
+
+      <section class="container valeurs">
+        <h2 class="decoration deco-rond">
+          Nos valeurs
+        </h2>
+        <p class="sous-titre">
+          Respect de la nature & de l'environnement
+        </p>
+        <p>
+          Le Velour veut mettre un point d’honneur à travailler des produits de
+          saison, issus de circuits courts.
+        </p>
+        <p>
+          Ainsi qu'en étant éco-responsable, notamment via la gestion des
+          déchets, la provenance des marchandises, réduire l'usage du papier,
+          etc.
+        </p>
+        <p>
+          <span>Notre objectif ?</span>
+          → Obtenir le label "Restaurant Vert", d'ici 2 ans.
+        </p>
+        <p class="sous-titre">
+          Le fait-maison
+        </p>
+        <p>
+          L’ensemble de notre carte est réalisée à partir de produits frais et
+          bruts, transformés dans nos cuisines.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="reservation">
+        <a href="reservation.html">Réserver une table</a>
+      </div>
+      <img
+        class="logoFooter"
+        src="images/logo-vert/logo-vert-1-1.png"
+        alt="logo footer"
+      />
+      <p>
+        Lun : Fermé <br />
+        Mar - Dim : 12h - 13h30 / 19h - 21h
+      </p>
+      <p>
+        38 Place Graslin - 44000 Nantes
+      </p>
+      <p>
+        <a href="tel:+330241328703">02 41 32 87 03</a>
+        <br />
+        <a href="mailto:contact@levelour.com">contact@levelour.com</a>
+      </p>
+      <div class="reseaux">
+        <a href="">
+          <img
+            src="images/icon-reseaux/icon-facebook.png"
+            alt="icon facebook"
+          />
+        </a>
+        <a href="">
+          <img
+            src="images/icon-reseaux/icon-instagram.png"
+            alt="icon instagram"
+          />
+        </a>
+        <a href="">
+          <img
+            src="images/icon-reseaux/icon-tripadvisor.png"
+            alt="icon tripadvisor"
+          />
+        </a>
+        <a href="" class="telephone">
+          <img src="images/icon-reseaux/icon-tel.png" alt="icon telephone" />
+        </a>
+        <a href="">
+          <img src="images/icon-reseaux/icon-mail.png" alt="icon mail" />
+        </a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

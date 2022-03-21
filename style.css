@@ -1,0 +1,742 @@
+/* Importation des polices manquantes */
+@font-face {
+  font-family: "Metropolis-1920";
+  src: url("fonts/Metropolis-1920.otf");
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body {
+  background-color: #153b39;
+  font-size: 1.4rem;
+  font-family: "Prompt Light", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+.menu-velour p {
+  text-align: center;
+  font-family: "Prompt Light", sans-serif;
+  font-style: italic;
+}
+
+.info-velour p {
+  text-align: center;
+  font-family: "Prompt", sans-serif;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.price p {
+  text-align: left;
+}
+
+.price {
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: "Poiret One", sans-serif;
+  color: #fef2e6;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.metropolis {
+  font-family: "Metropolis 1920", sans-serif;
+  color: white;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+
+.metropolis::before {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 38px;
+  width: 70px;
+  background-image: url(images/decoration/deco-menu.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 38px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.metropolis::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 38px;
+  width: 70px;
+  background-image: url(images/decoration/deco-menu.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 38px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.info-velour .metropolis {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h3 {
+  font-family: "Poiret One", sans-serif;
+  color: #fef2e6;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.dessert {
+  margin-bottom: 40px;
+}
+
+.menu-velour h3 {
+  margin-top: 40px;
+}
+
+/* Détails Fonts */
+
+.decoration {
+  font-family: "Poiret One", cursive;
+}
+
+.reservation {
+  font-family: "Poiret One", cursive;
+  color: #fef2e6;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.velour h1,
+.velour h2 {
+  font-family: "Metropolis 1920", sans-serif;
+  color: #fef2e6;
+}
+.velour h1 {
+  font-size: 5.2rem;
+}
+.velour h2 {
+  font-size: 2.8rem;
+}
+
+.epicerie {
+  font-size: 2.4rem;
+}
+
+span,
+.nosmenus {
+  font-family: "Metropolis-1920", sans-serif;
+  font-size: 3.2rem;
+}
+
+span,
+.prix {
+  font-size: 1.4rem;
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+}
+
+.sous-titre {
+  font-family: "Poiret One", sans-serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: white;
+}
+/* Header */
+
+header {
+  background-color: white;
+  display: flex;
+  flex: wrap;
+  align-items: center;
+}
+
+header i {
+  color: #153b39;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+#logo {
+  width: 65%;
+}
+#logo img {
+  margin: auto;
+}
+/* header img {
+  width: 65%;
+  width: 1081px;
+  height: 300px;
+  overflow: hidden;
+} */
+
+header nav {
+  color: #153b39;
+}
+
+/* Style du menu de navigation */
+.topnav {
+  /* display: flex; */
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Cacher les liens dans le menu (sauf le logo) */
+.topnav #mesLiens {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  z-index: 10;
+  padding-top: 200px;
+}
+#xmark {
+  display: none;
+}
+
+.topnav a {
+  font-family: "Poiret One", sans-serif;
+  font-size: 2.8rem;
+  color: #153b39;
+  text-transform: uppercase;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.topnav a.icon {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 25px;
+  z-index: 11;
+}
+
+/* .topnav a:hover:not(#logo):not(.icon) {
+  background-color: #ddd;
+  color: black;
+} */
+
+.prez {
+  font-weight: bold;
+  text-align: center;
+  margin-top: -25px;
+}
+.reservation {
+  background-color: #e1b777;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+.reservation a {
+  border: solid white 2px;
+  border-radius: 25px;
+  padding: 10px 25px 10px 25px;
+}
+
+/* Margin de 40px sur tout le main sauf les bandeaux "reservation" */
+/* main > :not(.reservation) {
+  margin: 40px;
+} */
+
+/* Body */
+.velour {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.slider {
+  position: relative;
+}
+
+.nosmenus {
+  margin-bottom: 75px;
+}
+.nosmenus a {
+  display: block;
+  background-image: url(images/decoration/deco-nosmenus.png);
+  background-repeat: no-repeat;
+  height: 102px;
+  width: 360px;
+  background-size: 100%;
+  text-align: center;
+  line-height: 102px;
+  margin: auto;
+}
+.discover-epicerie {
+  display: none;
+}
+.concept h2 {
+  width: 100%;
+  margin-top: -25px;
+}
+
+.concept {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.concept div,
+.concept figure {
+  width: 45%;
+  margin: 0;
+  position: relative;
+}
+
+.concept figure {
+  margin-left: 30px;
+}
+
+.concept figure::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: calc(100% + 15px);
+  height: 100%;
+  border: 2px solid #e1b777;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  top: -17px;
+  left: -16.5px;
+}
+
+.assiette {
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  -webkit-box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.82);
+  box-shadow: 5px 5px 16px 0px rgba(0, 0, 0, 0.82);
+}
+
+.deco-carre::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 38px;
+  width: 309px;
+  background-image: url(images/decoration/bordure-carre.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 38px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.deco-carre-bis::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 38px;
+  width: 309px;
+  background-image: url(images/decoration/bordure-carre.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 38px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.deco-rond::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 51px;
+  width: 205px;
+  background-image: url(images/decoration/bordure-rond.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  line-height: 51px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: -20px;
+}
+
+.valeurs {
+  margin-bottom: 45px;
+  margin-top: 40px;
+}
+
+.valeurs p {
+  margin-bottom: 25px;
+}
+
+.valeurs > p > span {
+  font-family: "Prompt", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Slider */
+.bx-wrapper {
+  border: 0;
+  box-shadow: none;
+}
+.bx-wrapper .bx-pager {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  top: 85%;
+}
+.bx-wrapper .bx-controls-direction a {
+  display: none;
+}
+
+/* .slider .bxslider li {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+#epicerie {
+  background-color: #fef2e6;
+  margin: 0 auto;
+  padding-top: 10px;
+
+  -webkit-box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.39);
+}
+#epicerie h2,
+#epicerie p {
+  color: #153b39;
+}
+
+.epicerie {
+  font-size: 3.5rem;
+}
+
+#epicerie h2 span {
+  color: #e1b777;
+  font-family: "Poiret One", sans-serif;
+  font-size: 3.5rem;
+}
+.croissants {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 175px;
+  margin-top: 20px;
+  border-bottom: solid #e1b777 20px;
+}
+
+.burgermenu .icon {
+  position: relative;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  background: white;
+  margin-right: 0.5em;
+}
+
+.burgermenu .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer */
+
+footer {
+  background-color: white;
+  color: #153b39;
+  font-family: "Poiret One", cursive;
+}
+
+.logoFooter {
+  width: 20%;
+  display: block;
+  margin: auto;
+  padding-top: 25px;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.reseaux img {
+  width: 38px;
+}
+
+.reseaux {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.telephone {
+  margin-left: 20px;
+}
+
+/* Reservation */
+
+form {
+  background-color: #fef2e6;
+  color: #153b39;
+  padding: 30px 20px 30px 20px;
+
+  -webkit-box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: inset 0px 4px 10px 0px rgba(0, 0, 0, 0.39);
+}
+
+.formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.formulaire input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 6px 12px 6px 12px;
+}
+
+.resa-left {
+  width: 45%;
+}
+
+.resa-right {
+  width: 45%;
+}
+
+.message {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+.send:not(#mesLiens .send) {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.send button,
+#mesLiens a.send {
+  font-family: "Poiret One", cursive;
+  color: #fef2e6;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: #e1b777;
+  border: solid #e1b777 2px;
+  border-radius: 25px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer;
+  transition: ease-out 400ms;
+}
+#mesLiens a.send:hover {
+  background-color: #153b39;
+  color: #fef2e6;
+  border: solid #153b39 2px;
+}
+
+.formulaire input {
+  color: #153b39;
+}
+
+/* #messageErreur {
+   width: fit-content;
+  margin: 0 auto;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #ee675c;
+  border-radius: 25px;
+  padding: 1% 25px;
+  text-align: center;
+  margin-top: 50px; 
+} */
+
+.find-us {
+  margin-bottom: -5px;
+}
+
+.find-us p {
+  text-align: center;
+  margin-bottom: 5vh;
+  font-style: italic;
+}
+
+iframe {
+  width: 100%;
+  align-items: center;
+}
+
+/* Responsive Tablette+desktop */
+@media screen and (min-width: 780px) {
+  /* Nav*/
+
+  #logo {
+    width: 33%;
+  }
+  .topnav {
+    display: flex;
+    position: initial;
+    align-items: center;
+  }
+  /* .topnav a:not(#mesLiens) {
+    width: 33%;
+    margin-right: 2vw;
+  } */
+  .topnav a {
+    font-size: 2.1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .topnav #mesLiens {
+    width: 65%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    padding-top: 0;
+    text-align: center;
+    /* margin-top: ; */
+    justify-content: space-evenly;
+  }
+
+  /* Centrer verticalement les items de la nav */
+  #mesLiens a:not(a.send) {
+    transition: text-decoration-color 400ms;
+  }
+  #mesLiens a:hover:not(a.send) {
+    text-decoration: underline #e1b777;
+    text-underline-offset: 0.4em;
+  }
+  body {
+    font-size: 1.8rem;
+  }
+
+  .velour h1 {
+    font-size: 7rem;
+  }
+
+  .velour h2 {
+    font-size: 4rem;
+  }
+
+  h2,
+  .epicerie,
+  #epicerie h2 span {
+    font-size: 5rem;
+  }
+
+  .nosmenus a {
+    margin-top: 100px;
+    margin-bottom: 175px;
+    transform: scale(2);
+  }
+
+  .concept .discover-epicerie {
+    display: flex;
+    font-family: "Poiret One", cursive;
+    color: #fef2e6;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #e1b777;
+    border: solid #e1b777 2px;
+    border-radius: 25px;
+    padding: 10px 25px 10px 25px;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .concept figure {
+    transform: scale(0.75);
+  }
+  .sous-titre {
+    font-size: 2.5rem;
+  }
+
+  .reservation a,
+  .reservation-top {
+    visibility: hidden;
+  }
+
+  .burgermenu {
+    visibility: hidden;
+  }
+
+  .bx-wrapper {
+    margin-top: -63px;
+  }
+
+  .deco-rond::after {
+    width: 270px;
+  }
+
+  .deco-carre::after,
+  .deco-carre-bis::before {
+    height: 60px;
+    width: 430px;
+  }
+
+  form {
+    padding: 40px 150px 40px 150px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #mesLiens a.send {
+    /* font-family: "Poiret One", cursive;
+  color: #fef2e6;
+  font-size: 2rem;
+  text-transform: uppercase; */
+    background-color: none;
+    border: none;
+    /* border-radius: 25px;
+  padding: 10px 25px 10px 25px;
+  cursor: pointer; */
+  }
+  #mesLiens a.send:hover {
+    background-color: none;
+    color: none;
+    border: none;
+  }
+}

@@ -1,0 +1,28 @@
+Couleurs :
+- vert : #153B39
+- beige doré : #E1B777
+- beige : #FEF2E6
+- dégradé linéaire : #E0BD76 to #BF8935
+
+Polices :
+- Gros titres : Metropolis 1920
+- Titres : Poiret One
+- Corps : Prompt (Light, Medium, Bold, Italic)
+
+HOME :
+LE VELOUR -> Metropolis 1920, 52px, beige
+Restau gastronomique ... fine --> Metropolis 1920, 28px, beige
+
+Le Velour ... les papilles -> Prompt bold, 14px, white
+P -> Prompt light, 14px, white
+
+NOS MENUS -> Metropolis 1920, 35px, beige
+Sous-titre (Le Concept, Nos valeurs) -> Poiret One, 35px, beige
+Le velour c'est aussi -> Poiret One, 24px, vert
+epicerie -> Metropolis 1920, 35px, doré
+p -> Prompt Light, 14px, vert
+
+Respect ..environnement -> Poiret One, 18px, beige
+p -> Prompt Light, 14px, beige
+
+x2
